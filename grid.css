@@ -1,0 +1,645 @@
+.fa-star{
+    color:#ffa70f;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+   scroll-behavior: smooth;
+    font-family:  "Mont Regular" ,Verdana, Tahoma, sans-serif;
+}
+
+.container{
+    display: grid;
+    /* grid-template-columns: auto; */
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    'nav'
+    'content'
+    'why'
+    'reviews'
+    'end';
+}
+a{
+    text-decoration: none;
+    color: #867050;
+}
+nav{
+    font-family:  'Minion Pro' !important;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 8vmin;
+    background-color: white;
+    color: #867050;
+       backdrop-filter: brightness(55%);
+       font-size: 3vmin;
+
+}
+
+.bg{
+ background-image: url(airlines/backalt.jpg);
+ width: 100%;
+ background-repeat: no-repeat;
+  background-size: 100%;
+ background-position: 0px -250px;
+ height: 100vh;
+}
+.logo{
+    font-family: "Galato";
+    position: absolute;
+    left: 5px;
+    cursor: pointer;
+}
+.links{
+    width: 60vw;
+    font-size: 2.5vmin;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+left: 18vw;
+gap: 5vw;
+
+}
+
+.social{
+    justify-content: flex-end;
+    display: flex;
+   position: absolute;
+   right: 10px;
+   margin-right: 20px;
+   font-size: 2.5vmin;
+   gap: 6%;
+   width: 20vw;
+   color: #867050 !important;
+}
+.book{
+    
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    height: 3vmax;
+    width: 20vmin;
+    
+    border-radius:5px;
+    font-size: 2vmin;
+    transition-duration:0.5 ;
+    transition: transform 200ms,background 200ms;
+   
+}
+
+.book:hover{
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    transform: scale(1);
+    transform: translateY(-3px);
+
+    
+}
+.btn1 {
+  
+    color: #fff;
+    cursor: pointer;
+     display: block;
+     height: 5vmin;
+     width: 20vmin;
+     
+     border-radius:5px;
+     font-size: 2vmin;
+    position: relative;
+    text-decoration: none;
+  
+   
+    @media(min-width: 600px) {
+        
+      margin: 0 1em 2em;
+    
+       &:nth-of-type(even) {
+         margin-right: 2.5em;
+       }
+      
+       &:nth-of-type(5) {
+         margin-right: 0;
+      }
+      
+    }
+    
+    &:hover { text-decoration: none; }
+    
+  }
+.book:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  .book {
+    font-size: 2vmin;
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+      z-index: 20;
+     
+    }
+    
+    &:after {
+      background: #fff;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: -10;
+    }
+  }
+  
+  .book:hover {
+    
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+  
+  
+
+ .links a {
+    display: inline-block;
+    position: relative;
+  }
+.links a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #867050;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .links a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  .sc{
+    width:5vmin;
+    height: 5vmin;
+    /* float: left; */
+    /* margin: .5rem 1rem .5rem 0; */
+    color: #867050;
+    border: .125rem solid #f3f3f3;
+    box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+    border-radius: 50%;
+    transition: 250ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .sce{
+    color: white;
+  }
+  
+  #lk{
+    &:hover,
+    &:focus {
+      color: #cd201f;
+      box-shadow: 0 0 24px 0 #cd201f
+    }
+  }
+  
+  #fb {
+    &:hover,
+    &:focus {
+      color: #3b5998;
+      box-shadow: 0 0 24px 0 #3b5998
+    }
+  }
+  
+  #gg {
+    &:hover,
+    &:focus {
+      color: #dd4b39;
+      box-shadow: 0 0 24px 0  #dd4b39;
+    }
+  }
+  #twt {
+    &:hover,
+    &:focus {
+      color: #00ACED;
+      box-shadow: 0 0 24px 0 #00ACED
+    }
+  }
+  
+ 
+.seccot{
+    /* border:3px solid #ffa70f; */
+    word-wrap: break-word;  
+    font-size: 5vmin;
+    display: flex;
+    /* gap: 7%; */
+
+    padding: 0% 15%;
+    height: 91vmin;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      color: white;
+      text-align: center;
+     backdrop-filter: blur(3px);
+    background-repeat: no-repeat;
+    flex-wrap: nowrap;
+    gap: 4vmin;
+   /* text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+   0px -4px 10px rgba(255,255,255,0.3); */
+   word-wrap: break-word;
+   
+    
+}
+/* .h1{
+    border: 2px solid #ffa70f;
+} */
+/* .h2{
+    border: 2px solid #ffa70f;
+} */
+.h3{
+    /* border: 2px solid #ffa70f; */
+    font-size: 3vmin;
+    padding:0% 20% ;
+    text-align: center;
+}
+
+.why{
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(120, 128, 165); */
+    /* margin-top: 2%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.why h1{
+    font-family: "Bodoni MT";
+    color: #867050;
+    font-size: 4em;
+    position: absolute;
+    top: 110vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+h3{
+    font-size: 1.8rem;
+}
+.smallboxes{
+    color: #867050;
+    font-family: 'Verdana';
+  margin-top:6% ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+#box1{
+    color: #867050;
+  display: flex;
+  align-items: end;
+  border-radius: 15px;
+    border: 2px solid rgb(228, 220, 220) ;
+    box-shadow: 10px 10px 5px rgb(175, 172, 172);
+
+    width: 20vw;
+    height:55vh;
+    background-image: url(airlines/airlines.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+  
+}
+#box2{
+   
+        display: flex;
+        align-items: end;
+    border: 2px solid rgb(228, 220, 220) ;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(175, 172, 172);
+
+    width: 20vw;
+    height:55vh;
+    background-image: url(airlines/5star.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 0% 100%; */
+    background-size:contain;
+}
+#box3{
+    
+    display: flex;
+    align-items: end;
+    border: 2px solid rgb(228, 220, 220) ;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(175, 172, 172);
+    width: 20vw;
+    height:55vh;
+    background-image: url(airlines/food.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 0% 100%; */
+    background-size:contain;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    flex-wrap: nowrap;
+    /* border:4px solid #ffa70f; */
+    height:48%;
+     width: 100%;
+    font-size: 2vmin;
+    padding: 0% 5% ;
+    word-wrap: break-word;
+}
+.txt a{
+ position: relative;
+ top: 19%;
+    
+     color: #867050;
+}
+ #box2 .txt a{
+ position: relative;
+ top: 28%;
+    
+     color: #867050;
+}
+#box3 .txt a{
+ position: relative;
+ top: 19%;
+    
+     color: #867050;
+     
+}
+.revs{
+    position: relative;
+    top: 0%;
+    /* background-color: #867050; */
+    height: 100vh;
+    /* margin-top: 5%; */
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+    align-items: center;
+    color: #867050 !important;
+}
+.revs h1{
+    color: #867050;
+    position: relative;
+    margin-top: 40px;
+    font-size: 7vmin;
+}
+.revcont{
+    position: absolute;
+    top: 25%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10%;
+    /* border:5px solid #ffa70f; */
+    grid-column-gap:10% ;
+    height: 60%;
+    width: 80%;
+    padding: 1% 5vmin;
+
+} 
+.rev{
+    font-size: 2vmin;
+    border: 1px solid #ffffff;
+    height: 100%;
+    width: 100%;
+   display: grid;
+   grid-template-rows: auto auto auto;  
+   grid-template-areas: 
+   'star'
+   'cmnt'
+   'date';
+    padding: 0% 5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
+    
+}
+.star h5{
+    font-size: 2.3vmin !important;
+    display: flex;
+    gap: 4px;
+   
+}
+.star{
+    
+    margin-top: 2%;
+    grid-area: star;
+  display: flex;
+  gap: 15%;
+;
+}
+
+.cmnt{
+    grid-area: cmnt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid #131313; */
+    height: 10vh;
+    
+
+}
+.date{
+    /* border: 2px solid#131313; */
+    grid-area: date;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.end{
+  
+    color: white;
+    height: 90vh;
+    background-color: #867050;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 100vh ;
+    grid-template-areas: 'para trips address ftlinks' 
+                 'paratext  trips address social2'
+                    ;
+    
+}
+
+.para > h2{
+     
+    font-size:  5vmin;
+}
+.para{
+    grid-area: para;
+    display: flex;
+  font-size: 2vmin;
+    
+}
+.trips h3{
+    
+    font-size:  5vmin;
+}
+.trips{
+    grid-area: trips;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    /* gap: 12%; */
+    align-items: center;
+    margin-left: 20%;
+
+}
+.address h3{
+ 
+    font-size:  5vmin;
+}
+.imgcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ch{
+    text-indent: 90px;
+}  
+.contacts{
+    margin-top: 22% ;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    font-size: 3vmin;
+    
+
+}
+
+.ftlinks{
+    display: flex;
+    flex-direction: column;
+    grid-area: ftlinks;
+    margin-top: 26%;
+    gap: 12%;
+    padding-right: 2vmin ;
+    font-size: 2vmin;
+    align-items: flex-start;
+}
+#social2{
+    margin-top: 1vmin;
+   font-size: 3vmin;
+   display: flex;
+   gap: 3vmin;
+   padding-bottom: 10%;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    gap: 10% ;
+    padding-right:  20%;
+    padding-left: 5%;
+    text-align: justify;
+}   
+.p2{ 
+   margin-top: 5%;
+    
+}
+.imgcont{
+    margin-top: 14%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   grid-row-gap: 10%;
+   grid-column-gap: 5%;
+}
+.img{
+    border-radius: 10px;
+    height: 10vmin;
+    width: 10vmin;
+    
+}
+
+#img1{
+    background-image: url(airlines/china.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img2{
+    background-image: url(airlines/sw.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img3{
+    background-image: url(airlines/pak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img4{
+    background-image: url(airlines/egypt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img5{
+    background-image: url(airlines/paris.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img6{
+    background-image: url(airlines/london.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.end{
+    position: relative;
+    bottom: -10%;
+    height: 90%;
+}
+.lastft{
+    font-size: 2.5vmin;
+    height: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #867050;
+}
+
+.ftlinks a{
+  color: white !important;
+
+}
+.sce:hover{
+  background-color: white;
+  color: #867050 !important;
+    transform: scale(1.2);
+    box-shadow: 0 0 6px 3px white;
+
+}
